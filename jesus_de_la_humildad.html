@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesús de la Humildad</title>
+    <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/menu.css">
+    <link rel="stylesheet" href="estilos/pie.css">
+    <link rel="stylesheet" href="estilos/pasos.css">
+</head>
+<body>
+    <!-- Encabezado con el menú -->
+    <header>
+        <div class="header">
+            <img src="https://archicofradiasantisimojerez.es/wp-content/uploads/2018/11/Escudo-1-250x300.jpg" height="90" width="90" alt="Escudo de la Archicofradía">
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html"><u>Inicio</u></a></li>
+                    <li><a href="mapasitioweb.html"><u>Mapa del Sitio web</u></a></li>
+                    <li><a href="jesus_de_la_santa_cena.html"><u>Jesús de la Santa Cena</u></a></li>
+                    <li><a href="jesus_de_la_humildad.html"><u>Jesús de la Humildad</u></a></li>
+                    <li><a href="jesus_de_la_piedad.html"><u>Jesús de la Piedad</u></a></li>
+                    <li><a href="virgen_de_la_paz.html"><u>Virgen de la Paz</u></a></li>
+                    <li><a href="contacto.html"><u>Contacto</u></a></li>
+                    <li>
+                        <label for="idioma-selector" class="sr-only">Selecciona idioma:</label>
+                        <select id="idioma-selector" aria-label="Seleccionar idioma">
+                            <option value="es">Español</option>
+                            <option value="en">Inglés</option>
+                            <option value="fr">Francés</option>
+                            <option value="ger">Alemán</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+            <label for="searchInput" class="sr-only">Buscar en el sitio:</label>
+            <input type="text" id="searchInput" placeholder="Buscar..." oninput="searchText()" aria-label="Buscar en el sitio">
+            <div id="search-results" role="region" aria-live="polite"></div>
+        </div>
+    </header>
+
+    <main id="inicio">
+        <div id="content">
+            <h1><u><b>Jesús de la Humildad</b></u></h1>
+            <audio controls autoplay>
+                <source src="audios/humildad.wav" type="audio/mpeg">
+            </audio>
+            <h2><u>La Sentencia de Jesús</u></h2>
+            <p>Jesús es llevado ante Pilatos, quien se lava las manos mientras el Pregonero pronuncia la sentencia...</p>
+            <center>
+            <img src="imagenes/Pilatos/Humildad.jpeg" height="400" width="300" alt="Imagen de Jesús de la Humildad">
+            </center>
+
+            <h2><u>Algunas imágenes y videos enviados por colaboradores</u></h2>
+            <div class="grid-container">
+                <div class="grid-item"><img src="imagenes/Pilatos/9.jpeg" alt="Jesús de la Humildad en procesión"></div>
+                <div class="grid-item"><img src="imagenes/Pilatos/2.jpeg" alt="Vista del paso de Jesús de la Humildad"></div>
+                <div class="grid-item"><img src="imagenes/Pilatos/5.jpeg" alt="Detalle del paso de Jesús de la Humildad"></div>
+                <div class="grid-item"><img src="imagenes/Pilatos/4.jpeg" alt="Costaleros durante la procesión"></div>
+            </div>
+
+            <h2><u>Marchas dedicadas al Cristo de la Sentencia (Humildad)</u></h2>
+            <ul>
+                <li>Jesús ante Pilatos.</li>  
+                <li>La Sentencia.</li>
+                <li>Al Compás de tu Humildad - interpretada por la Agrupación Musical Nuestro Padre Jesús Nazareno.</li>
+                <li>"Y tú, mi salvador" - dedicada a la gente que venció el cáncer. Video Abajo</li>
+            </ul>
+            <center>
+                <video controls >
+                    <source src="video/Y TÚ…MI SALVADOR  ESTRENO  AM. Ntro. Padre Jesús Nazareno.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+            </center>
+
+            <h2><u>Las Andas del Misterio (paso)</u></h2>
+            <p>Las andas fueron realizadas en tres fases, culminadas en el año 2002...</p>
+
+            <h2><u>Capataz del paso y su auxiliar:</u></h2> 
+            <p>Capataz: D. Francisco Gómez Jiménez. <br>Auxiliar: D. Juan Manuel García Ceberino.</p>
+
+            <h2><u>Cantidad de Costaleros debajo del Misterio (paso)</u></h2>
+            <p>44 Costaleros en 2023 fue la fecha en la que más costaleros estaban debajo del misterio.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Archicofradía Santísimo Sacramento. Todos los derechos reservados.</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">Facebook</a>
+            <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">Twitter</a>
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">Instagram</a>
+        </div>
+    </footer>
+    
+    <script src="buscar.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Completa</title>
+    <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/menu.css">
+    <link rel="stylesheet" href="estilos/pie.css">
+    <link rel="stylesheet" href="estilos/pasos.css">
+</head>
+<body>
+
+    <!-- Encabezado con el menú -->
+    <header>
+        <div class="header">
+            <img src="https://archicofradiasantisimojerez.es/wp-content/uploads/2018/11/Escudo-1-250x300.jpg" height="90" width="90" alt="Escudo de la Archicofradía">
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html"><u>Inicio</u></a></li>
+                    <li><a href="mapasitioweb.html"><u>Mapa del Sitio web</u></a></li>
+                    <li><a href="jesus_de_la_santa_cena.html"><u>Jesús de la Santa Cena</u></a></li>
+                    <li><a href="jesus_de_la_humildad.html"><u>Jesús de la Humildad</u></a></li>
+                    <li><a href="jesus_de_la_piedad.html"><u>Jesús de la Piedad</u></a></li>
+                    <li><a href="virgen_de_la_paz.html"><u>Virgen de la Paz</u></a></li>
+                    <li><a href="contacto.html"><u>Contacto</u></a></li>
+                    <li>
+                        <label for="idioma-selector" class="sr-only">Selecciona idioma:</label>
+                        <select id="idioma-selector" aria-label="Seleccionar idioma">
+                            <option value="es">Español</option>
+                            <option value="en">Inglés</option>
+                            <option value="fr">Francés</option>
+                            <option value="ger">Alemán</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+            <label for="searchInput" class="sr-only">Buscar en el sitio:</label>
+            <input type="text" id="searchInput" placeholder="Buscar..." oninput="searchText()" aria-label="Buscar en el sitio">
+            <div id="search-results" role="region" aria-live="polite"></div>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main id="inicio">
+        <div id="content">
+            <h1 class="text-center"><u><b>Cristo de la Piedad</b></u></h1>
+
+            <audio controls autoplay>
+                <source src="audios/piedad.wav" type="audio/mpeg">
+            </audio>
+        
+            <h2><u><b>Crucificado</b></u></h2>
+            <p>Tallado en madera de abedul, de autoría anónima. Se fija su antigüedad en el siglo XVI y podría pertenecer a la escultórica escuela castellana, del círculo de Gregorio Fernández...</p>
+            
+            <center>
+            <img src="imagenes/Cristo de la piedad/cristo.jpeg" height="400" width="300" alt="Imagen del Cristo de la Piedad">
+            </center>
+
+            <h2><u><b>Algunas imágenes y videos enviados por colaboradores</b></u></h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="imagenes/Cristo de la piedad/WhatsApp Image 2024-04-24 at 22.23.09.jpeg" alt="Cristo de la Piedad en procesión">
+                </div>
+                <div class="grid-item">
+                    <img src="imagenes/Cristo de la piedad/5.jpeg" alt="Detalle del Cristo de la Piedad">
+                </div>
+                <div class="grid-item">
+                    <img src="imagenes/Cristo de la piedad/WhatsApp Image 2024-04-24 at 22.40.49.jpeg" alt="Paso del Cristo de la Piedad">
+                </div>
+                <div class="grid-item">
+                    <img src="imagenes/Cristo de la piedad/6.jpg" alt="Procesión del Cristo de la Piedad">
+                </div>
+            </div>
+            
+            <h2><u><b>Marchas dedicadas al Cristo de la Sentencia (humildad):</b></u></h2> 
+            <ul>
+                <li>Santísimo Cristo de la Piedad, compuesta para banda de música.</li>  
+                <li>Piedad y Consuelo, dedicada al Cristo de la Piedad y a Consuelo Sánchez Ballesteros.</li>
+            </ul>
+            <p>Aunque el Cristo tenga marchas dedicadas, el paso procesiona sin banda, en silencio.</p>
+
+            <h2><b><u>Las Andas del Misterio (paso)</u></b></h2> 
+            <p>Procesiona sobre unas andas de caoba tallada, adquiridas en Bollullos del Condado en 1980...</p>
+
+            <h2><b><u>Capataz del paso y su auxiliar:</u></b></h2> 
+            <p>Capataz: D. José Luis Valle Trejo. <br>Auxiliar: D. Juan Diego Sancho.</p>
+
+            <h2><b><u>Cantidad de Costaleros debajo del Misterio (paso)</u></b></h2>
+            <p>44 Costaleros en 2023 fue la fecha en la que más costaleros estaban debajo del misterio.</p>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Archicofradía Santísimo Sacramento. Todos los derechos reservados.</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">Facebook</a>
+            <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">Twitter</a>
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="buscar.js"></script>
+</body>
+</html>
